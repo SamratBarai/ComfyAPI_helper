@@ -72,12 +72,3 @@ class Base64ImageLoader:
             mask = torch.zeros((image.shape[1], image.shape[2]), dtype=torch.float32)
         
         return (image, mask)
-
-# These mappings are what ComfyUI looks for to "add" the node to the system
-NODE_CLASS_MAPPINGS = {
-    "Base64ImageLoader": Base64ImageLoader
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "Base64ImageLoader": "Base64 Image Loader"
-}
